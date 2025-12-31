@@ -1,1 +1,22 @@
-placeholder
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UK Stagecoach Bus Display</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div id="statusLine">Loading…</div>
+    <header>
+      <div class="clock" id="clock">--:--:--</div>
+    </header>
+
+    <main class="board">
+      <div id="loading" class="empty">Loading data…</div>
+      <div id="list"></div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

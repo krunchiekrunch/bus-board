@@ -1,1 +1,77 @@
-/* placeholder */
+:root{
+  --bg:#0b0b0f;
+  --accent:#ff8c1a;
+  --muted:#9a6b3f;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+html,body{height:100%;margin:0}
+
+body{
+  background: linear-gradient(180deg,var(--bg), #071617 120px);
+  color:var(--accent);
+  display:flex;
+  justify-content:center;
+  padding:20px;
+}
+
+.wrap{width:100%;max-width:1100px;position:relative}
+
+#statusLine{
+  position:absolute;
+  top:0;
+  left:0;
+  padding:4px 8px;
+  font-size:0.95rem;
+}
+
+.clock{
+  font-variant-numeric:tabular-nums;
+  color:var(--muted);
+  font-size:1.2rem;
+}
+
+.board{
+  margin-top:30px;
+  background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);
+  border-radius:10px;
+  padding:14px;
+  border:1px solid rgba(255,255,255,0.03);
+}
+
+.service{
+  display:grid;
+  grid-template-columns:110px 1fr 170px;
+  gap:12px;
+  padding:12px;
+  border-bottom:1px dashed rgba(255,255,255,0.02);
+}
+
+.svc-num{
+  font-size:1.6rem;
+  font-weight:800;
+  text-align:center;
+}
+
+.svc-dest{font-weight:700}
+.svc-meta{font-size:0.9rem;color:var(--muted)}
+.times{text-align:right;font-family:monospace}
+.empty{text-align:center;color:var(--muted);padding:24px}
+
+/* clock align fix */
+header{
+  display:flex;
+  justify-content:flex-end;
+  margin-bottom:12px;
+}
+
+/* new details */
+.small-muted{
+  font-size:0.82rem;
+  color:rgba(255,140,26,0.6);
+}
+
+.times{
+  font-family:monospace;
+  text-align:right;
+}
